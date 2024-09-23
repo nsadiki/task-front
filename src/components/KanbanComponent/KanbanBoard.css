@@ -1,0 +1,31 @@
+/* Style pour le conteneur principal */
+.kanban-container {
+    display: flex;
+    justify-content: space-between; /* Écarte les colonnes */
+    padding: 16px; /* Ajoute de l'espace autour du tableau */
+}
+
+/* Style pour chaque colonne */
+.kanban-column {
+    background: #f4f4f4; /* Couleur de fond */
+    padding: 16px; /* Espacement intérieur */
+    width: 300px; /* Largeur fixe pour chaque colonne */
+    min-height: 500px; /* Hauteur minimale */
+    border-radius: 4px; /* Coins arrondis */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin: 0 8px; /* Marge entre les colonnes */
+}
+
+/* Style pour le titre de chaque colonne */
+.kanban-column h2 {
+    margin: 0 0 16px; /* Espacement sous le titre */
+}
+
+/* Style pour les tâches */
+.task-card {
+    padding: 8px; /* Espacement intérieur des tâches */
+    margin: 0 0 8px; /* Marge entre les tâches */
+    background: #fff; /* Couleur de fond des tâches */
+    border-radius: 4px; /* Coins arrondis pour les tâches */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}

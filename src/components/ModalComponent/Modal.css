@@ -1,0 +1,135 @@
+/* Style pour le modal */
+.modal {
+  background: #000; /* Couleur de fond noire */
+  color: #fff; /* Couleur du texte en blanc */
+  padding: 20px;
+  border-radius: 6px;
+  height: 820px;
+  width: 800px;
+  max-width: 1000px;
+  margin: auto;
+  z-index: 10; 
+  position: relative;
+  box-sizing: border-box; /* Assure que le padding et les bordures sont inclus dans les dimensions */
+}
+
+/* Style pour l'overlay */
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5; 
+}
+
+/* Style pour le formulaire à l'intérieur du modal */
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style pour les zones de saisie dans le formulaire */
+.modal form .input-box {
+  margin-bottom: 20px;
+}
+
+/* Style pour les labels */
+.modal label {
+  color: #fff; /* Couleur du texte en blanc */
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Style pour les zones de texte */
+.modal textarea {
+  width: 100%;
+  height: 300px; /* Correction de la hauteur en px */
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical; 
+  box-sizing: border-box;
+  background: #fff; /* Fond sombre pour textarea */
+  color: #000; /* Texte blanc */
+}
+
+/* Style pour les champs de texte, sélecteurs, et date */
+.modal input[type="text"],
+.modal input[type="date"],
+.modal select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #fff; /* Fond sombre pour input, select et date */
+  color: #000; /* Texte blanc */
+}
+
+/* Style spécifique pour le champ de date */
+.modal input[type="date"] {
+  max-width: 100%;
+}
+
+/* Style pour les boutons */
+.modal button {
+  background-color: #07509f; /* Couleur de fond bleu */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Assure que les boutons ne débordent */
+  box-sizing: border-box; /* Assure que le padding et les bordures sont inclus dans les dimensions */
+}
+
+/* Style pour les boutons au survol */
+.modal button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Style pour le bouton 'annuler' */
+button[name="annuler"] {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style pour le bouton 'annuler' au survol */
+button[name="annuler"]:hover {
+  background-color: darkred;
+}
+
+/* Style pour le bouton 'Add' */
+.add-Button {
+  background-color: #000; /* Couleur de fond noire */
+  color: #fff; /* Couleur du texte en blanc */
+  border: none; /* Enlève les bordures */
+  padding: 15px 30px; /* Augmente le padding pour rendre le bouton plus grand */
+  font-size: 18px; /* Taille de la police pour une meilleure lisibilité */
+  font-weight: bold; /* Police en gras */
+  border-radius: 8px; /* Coins arrondis pour le bouton */
+  cursor: pointer; /* Curseur pointer pour indiquer que le bouton est cliquable */
+  transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+  margin: 20px 0; /* Espace autour du bouton */
+  align-self: center;
+}
+
+/* Style pour le bouton 'Add' au survol */
+.add-Button:hover {
+  background-color: #333; /* Couleur de fond au survol */
+}

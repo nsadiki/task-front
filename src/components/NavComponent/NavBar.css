@@ -1,0 +1,38 @@
+nav {
+    position: fixed; 
+    right: 0;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1000; 
+  }
+  
+  .icon-menu {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 40px; 
+    right: 0; 
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .menu button {
+    background-color:black;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .menu button:hover {
+    background-color: black;
+  }
+  
